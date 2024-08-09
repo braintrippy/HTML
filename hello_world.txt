@@ -1,3 +1,5 @@
 git add for staging area,,like waiting room 
 before files going local
 git add . ..tocka uzima sve fajlove iz foldera
+git commit - ide u lokalni repozitorij i nakon
+toga push na github
