@@ -1,0 +1,3 @@
+git add for staging area,,like waiting room 
+before files going local
+git add . ..tocka uzima sve fajlove iz foldera
