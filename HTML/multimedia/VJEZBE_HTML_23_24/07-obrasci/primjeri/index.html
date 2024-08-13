@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <p>
+            <label for="name">Ime:</label>
+            <input type="text" name="ime" id="name" required>
+        </p>
+        <p>
+            <label for="surname">Prezime:</label>
+            <input type="text" name="prezime" id="surname" placeholder="unesite prezime">
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="pass">Lozinka:</label>
+            <input type="password" name="lozinka" id="pass">
+        </p>
+
+        <p>
+            <label for="god">Unesite svoje godine</label>
+            <input type="number" name="godine" id="god" min="0" max="120">
+        </p>
+
+        <p>
+            <label for="tel">Telefon</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="021-123-456">
+        </p>
+
+        <p>
+            <label for="boja">Boja</label>
+            <input id="boja" name="boja" type="color">
+        </p>
+
+        <p>
+            <label for="grad">Odaberite seminar</label>
+            <select name="grad" id="grad">
+                <option value="london">London</option>
+                <option value="pariz" selected>Pariz</option>
+                <option value="rim">Rim</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="omiljeni">Upišite omiljeni predmet</label>
+            <input type="text" name="predmet" id="omiljeni" list="predmeti">
+            <datalist id="predmeti">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JAVASCRIPT">
+            </datalist>
+        </p>
+
+        <p>
+            <label for="obavijesti">Želim primati obavijesti</label>
+            <input type="checkbox" name="newsletter" id="obavijesti">
+        </p>
+
+        <p>
+            Ocjenite uslugu naše tvrtke: <br>
+            <input type="radio" id="o1" name="ocjena">
+            <label for="o1">1</label>
+
+            <input type="radio" id="o2" name="ocjena">
+            <label for="o2">2</label>
+
+            <input type="radio" id="o3" name="ocjena">
+            <label for="o3">3</label>
+        </p>
+
+        <p>
+            <label for="opis">Opiši svoje iskustvo:</label><br>
+            <textarea name="opis" id="opis" cols="30" rows="5"></textarea>
+        </p>
+
+        <p>
+            <label for="cv">Unesite svoj CV</label>
+            <input type="file" name="cv" id="cv">
+        </p>
+
+        <p>
+            <input type="reset" value="Poništi">
+            <input type="submit" value="Potvrdi">
+        </p>
+    </form>
+</body>
+</html>
