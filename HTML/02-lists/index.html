@@ -6,6 +6,68 @@
     <title>lists</title>
 </head>
 <body>
-    
+    <h1>Ordered lists with value</h1>
+    <ol>
+        <!-- ol (brojcane liste, ordered lists, li(list item) -->
+        <li>Scotland</li>
+        <li>Portugal</li>
+        <li>Egypt</li>
+    </ol>
+    <ol type="A">
+        <li value="3">Scotland</li>
+        <li value="1">Portugal</li>
+        <!-- value atribut (sami biramo broj svakog elementa kojeg zelimo) -->
+        <li>Egypt</li>
+    </ol>
+    <ol type="a" reversed>
+        <!-- reversed (obrnuti redoslijed) -->
+        <li>Scotland</li>
+        <li>Portugal</li>
+        <li>Egypt</li>
+    </ol>
+    <ol start="5">
+        <li>Scotland</li>
+        <li>Portugal</li>
+        <li>Egypt</li>
+    </ol>
+
+    <h2><b>Opisne liste</b></h2>
+    <dl>
+        <!-- description list -->
+        <dt><b>Edinburgh</b></dt>
+        <!-- dt description term (Glavna kategorija) -->
+        <dd>Capital of Scotland</dd>
+        <!-- dd description, definition (kategorija unutar kategorije) -->
+        <dt><b>Lisboa</b></dt>
+        <dd>Capital of Portugal</dd>
+        <dt lang="en"><b>Cairo</b></dt>
+        <dd lang="en">Capital of Egypt</dd>
+        <li lang="en"; hidden>MALTA </li>
+        <!-- lang (oznacava jezik na kojem se interpretira) -->
+        <!-- hidden sakrije sadrzaj -->
+    </dl>
+
+    <h2><b>Ugnijezdene liste(simbolicke)(lista unutar liste)</b></h2>
+    <ul>
+        <!-- liste grupiranje sa znakovima (tocke), unordered
+         lists, <li> list item -->
+        <li>Europe</li>
+        <li>Europe</li>
+        <li>Africa</li>
+         <ol type="1">
+            <!-- lista unutar liste, brojcana lista -->
+            <li>Scotland</li>
+            <li>Portugal</li>
+            <li>Egypt</li>
+            <dl type="A"></dl>
+            <!-- opisna lista (lista unutar liste unutar liste)-->
+        <dt lang="en"><b>Edinburgh</b></dt>
+        <dd lang="en">Capital of Scotland</dd>
+        <dt lang="en"><b>Lisboa</b></dt>
+        <dd lang="en">Capital of Portugal</dd>
+        <dt lang="en"><b>Cairo</b></dt>
+        <dd lang="en">Capital of Egypt</dd>
+         </ol>
+    </ul>
 </body>
 </html>
