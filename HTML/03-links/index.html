@@ -5,7 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>links</title>
 </head>
+<!-- sluze za nelinearno pregledavanje sadrzaja(svaki tab na nekoj stranici
+    je zaseban html dokument) -->
+<!-- a oznaka (anchor, usidriti cemo se negdje drugdje, link.),
+    href atribut linka = "URL ili mjesto html dokumenta" -->
 <body>
+    <h1>homepage</h1>
+    <a href="https://www.theodinproject.com/about" 
+    target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+    <!-- atribut target > gdje ce se link otvoriti..
+     self(default) u istom tabu, blank u novom tabu, parent, top -->
+    <!-- kada koristimo target blank za neku drugu stranicu,
+      rel atribut opisuje vezu izmedu trenutne
+      stranice i linkanog dokumenta -->
+    <!-- noopener vrijednost sprijecava
+      da otvoreni link dobije pristup stranici 
+      s koje smo ga otvorili -->
+    <!-- noreferrer vrijednost sprijecava novootvorenom linku
+      da zna koja stranica sadrzi taj link ili referencu. 
+      noreferrer u sebi takoder sadrzi i ponasanje noopener -->
+    <!-- oba 2 se koriste iz sigurnosnih razloga -->
+    <h2>Apsolutni linkovi</h2>
+    <p>Sadrze <strong>protokol i domenu destinacije</strong>
+        , npr. https i URL, gore navedeni primjer je primjer
+        apsolutnog linka</p>
+    <h2>Relativni linkovi</h2>
+    <p>Linkovi na druge HTML dokumente <strong>unutar nase web stranice</strong>
+        se zovu relativni linkovi. Ne ukljucuju domenu jer je to
+        druga stranica na istom web mjestu. Pretpostavljaju da se ime domene
+        ne mijenja jer smo na istoj web stranici.</p>
+        <br>
+        <a href="about.html" target="blank">About</a>
+        <!-- mozemo koristiti a href about.html jer
+         su ova 2 html file-a u istom direktoriju -->
+         <br>
+         <br>
+         <a href="pages/about.html" target="_blank">About</a>
+         <!-- ovdje koristimo relativnu putanje da si
+          lakse organiziramo foldere -->
+         <br>
+         <br>
+         <a href="./pages/about.html" target="_blank">About</a>
+         <!-- ./ prije linka specificiramo nas kod da pocne
+          traziti direktorij ili datoteku koja je relativna
+          u odnosu na trenutni direktorij -->
+
+          <h1><b>Unutarnji linkovi</b></h1>
+
+          <!-- nav je tag za glavnu navigaciju (semanticko
+           znacenje) -->
+    <nav>
+        <ul> 
+       <li><a href="#p1">Prvi paragraf</a></li>
+       <br>
+       <li><a href="#p2">Drugi paragraf</a></li>
+       <br>
+       <li><a href="#p3">Treci paragraf</a></li>
+        </ul>
+    </nav>
     
+        <!-- id atribut(unique identifier), mora biti 
+         jedinstven da po njemu nademo sto zelimo 
+         u dokumentu, # JE KLASA po kojoj onda radimo id -->
+        <h2 id="p1"><b>prvi paragraf</b></h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+       Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+       iusto enim consequuntur a recusandae id maiores, 
+       facilis provident velit quisquam est sunt.
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+       Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+       iusto enim consequuntur a recusandae id maiores, 
+       facilis provident velit quisquam est sunt.
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+       Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+       iusto enim consequuntur a recusandae id maiores, 
+       facilis provident velit quisquam est sunt.</p>
+       <h2 id="p2"><b>drugi paragraf</b></h2>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.</p>
+        <h2 id="p3"><b>treci paragraf</b></h2>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Laborum beatae commodi, rerum veritatis illo fugit ad dolore 
+        iusto enim consequuntur a recusandae id maiores, 
+        facilis provident velit quisquam est sunt.</p>
+
+
 </body>
 </html>
