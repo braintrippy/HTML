@@ -6,6 +6,30 @@
     <title>images</title>
 </head>
 <body>
-    
+    <img src="https://www.theodinproject.com/mstile-310x310.png">
+    <!-- slika direktno s weba..apsolutna putanja -->
+     <img src="./images/dog.jpg.jpg">
+     <!-- relativna putanja s lokalnog direktorija(
+      naseg racunala) -->
+      <img src="../multimedia/images/logo/html-css.gif" alt="logo">
+      <img src="../multimedia/images/logo/html-css.png" alt="css html">
+      <img src="../multimedia/images/logo/html-css.svg" alt="css html logo">
+      <!-- relativna putanja s obzirom na mjesto
+       u terminalu gdje se nalazimo -->
+       <!-- alt atribut(alternative text), opisuje
+        sliku..prikazuje se kao text ako browser ne
+        ucita sliku, ili npr. za screen readere. -->
+       <img src="../04-images/images/dog.jpg.jpg" alt="dog"
+       height="310" width="310">
+       <!-- height i width atributi, dobro ih je
+        specificirati cak i kada cemo koristiti CSS-->
+
+       <p><pre><b>
+        formati slika:
+        JPEG (Joint Photographic Experts Group)-kompresira se zbog manje velicine i ne gubi previse na kvaliteti
+        PNG (Portable Network Graphics)-ne kompresira se, slika ostaje zeljene(visoke) kvalitete
+        GIF (Graphics Interchange Format)-koristi se za prikazivanje animacija od par frameova
+        WebP (Web Picture)-bolja kompresija od JPEG, a kvaliteta ostaje skoro ista
+        AVIF (AV1 Image Format)-najmanje velicine, dobra za logo</b></pre></p>
 </body>
 </html>
