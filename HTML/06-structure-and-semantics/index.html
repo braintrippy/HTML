@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strukturiranje sadrzaja</title>
+    <style>
+        #header {
+            color: green;
+        }
+        #footer {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Strukturiranje sazdraja</h1>
+    <!-- koristimo <header> <nav> <article> - sluzi ako bi moglo stajati na nekoj drugoj stranici
+         <aside> <figure> <footer>
+        <section> - ako je nesto privatno, tipa ime nase tvrtke...vezano je za nesto specificno 
+             i druge umjesto <div> radi boljeg indeksiranja od strane preglednika raci
+            veceg ranga stranice kod pretrazivanja 
+        div sluzi samo ako zelimo strukturirat radi css-a -->
+    <div id="header">
+        <!-- moze ici samo <header> bez atributa -->
+        zaglavlje stranice, (logo, navigacija, uvodni tekst)
+        <nav>Navigacija sadrzaja</nav>
+    </div>
+    <div id="content">
+        <!-- moze ici samo <main> bez atributa -->
+        glavni sadrzaj stranice (naslovi, odlomci, slike, multimedija, obrasci)
+        <section>
+            Genericka sekcija sadrzaja
+        </section>
+        <article>
+            Neki samostalni sadrzaj
+        </article>
+        <aside>
+            Cjelina saddrzaja koja nije direktno povezana sa sadrzajem koji ga okukruzuje
+        </aside>
+        <figure>
+            samostalni sadrzaj (slika, ilustracija ...)
+           <figcaption>Opis tog sadrzaja, pr.slike iznas</figcaption>
+        </figure>
+    </div>
+    <footer>
+        podnozdje, (opce info., linkovi, kontakti...)
+    </footer>
+         
+</body>
+</html>
