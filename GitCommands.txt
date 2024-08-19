@@ -4,3 +4,4 @@ git add . ..tocka uzima sve fajlove iz foldera
 git commit -m "ime_filea"
  ide u lokalni repozitorij i nakon
 toga git push origin main na github
+git clone za kloniranje novostvorenog repozitorija lokalno
