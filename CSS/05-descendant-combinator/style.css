@@ -1,0 +1,11 @@
+.container .text {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* samo child elementi s klasom text koji
+su u parent elementu s klasom container
+ce biti stilizirani. selektori klasa se 
+odvajaju razmakom */
