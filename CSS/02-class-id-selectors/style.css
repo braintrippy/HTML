@@ -1,0 +1,21 @@
+.number-1,
+.number-3,
+.number-5 {
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+    background-color: lightpink;
+}
+
+#number-2 {
+    color: blue;
+    font-size: 36px;
+}
+
+.number-3 {
+    font-size: 24px;
+}
+
+#number-4 {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
