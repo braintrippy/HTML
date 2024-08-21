@@ -1,0 +1,107 @@
+.subsection {
+    color:blue;
+}
+
+.main .subsection {
+    color: red;
+}
+
+/* U primjeru iznad obe deklaracije koriste
+samo Class selektore, ali color:red pobjeduje
+jer koristi vise Class selektora, i samim time je 
+vise specificirana */
+
+#subsection {
+    color:blue;
+}
+
+.main .list {
+    color:red;
+}
+
+/* u primjeru iznad, iako druga deklaracija ima
+2 Class selektora, a prva samo jedan ID selektor,
+prva deklaracija je bolje specificirana jer ID
+selektor pobjeduje Class selektor */
+
+#subsection1 {
+    background-color: yellow;
+    color: blue;
+}
+
+.main1 #subsection1 {
+    color: red;
+}
+
+/* prva deklaracija koristi ID selektor, dok druga koristi
+Class selektor s ID selektorom. Ni jedna deklaracija nije specificirana
+vise od druge. Kaskada tada provjerava broj selektora svakog tipa.
+Obe deklaracije imaju ID selektor, ali druga deklaracija
+ima dodatni Class selektor tako da ona ima prednost.
+Background-color ostaje iz prve deklaracije jer ga druga
+ne ponistava s istim svojstvom */
+
+.class.second-class {
+    font-size: 14px;
+}
+.class .second-class {
+    font-size: 28px;
+}
+
+/* ovje su obje deklaracije isto specificirane (jednake vaznosti).
+prva koristi Chaining selector (no space),
+dok druga koristi descendant combinator (with space).
+Obje deklaracije imaju 2 class selektora i vaznost ostaje jednaka */
+
+.class.second-class {
+    font-size: 12px;
+}
+
+.class > .second-class {
+    font-size: 24px;
+}
+
+/* This example shows the same thing. Even though rule 2 is using a child combinator (>),
+this does not change the specificity value. Both rules still have two classes so they
+have the same specificity values. */
+
+* {
+    color: black;
+}
+
+h1 {
+    color: orange;
+}
+
+/* In this example, rule 2 would have higher specificity and the orange value
+would take precedence for this element. Rule 2 uses a type selector, which
+has the lowest specificity value. But rule 1 uses the universal selector (*) 
+which has no specificity value. */
+
+#parent {
+    color: red;
+}
+
+.child {
+    color: blue;
+}
+
+/* Iako je parent deklaracija jaca zbog ID selektora, child
+deklaracija je plave boje jer ju stil specificno cilja, dok je
+color: red naslijedena od roditelja */
+
+.alert {
+    color: red;
+  }
+  
+  .warning {
+    color: yellow;
+  }
+
+  /* For an element that has both the alert and warning classes, 
+  the cascade would run through every other factor, including inheritance 
+  (none here) and specificity (neither rule is more specific than the other). 
+  Since the .warning rule was the last one defined, and no other factor was 
+  able to determine which rule to apply, it’s the one that gets applied to the 
+  element. */
+  

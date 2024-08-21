@@ -22,5 +22,47 @@
     pobjeduje Type selektor, Type selektor pobjeduje manje specificirane selektore itd. -->
     <!-- kada nije specificiran selektor vece vrijednost, vrijedi pravilo da pobjeduje
      element s vise selektora istog tipa -->
+
+
+    <div class="main">
+      <div class="list subsection">Red text</div>
+    </div>
+
+
+    <div class="main">
+      <div class="list" id="subsection">Blue text</div>
+    </div>
+
+
+    <div class="main1">
+      <div class="list1" id="subsection1">Red text on yellow background</div>
+    </div>
+
+    <h2>Inheritance</h2>
+    <p>Inheritance refers to certain CSS properties that, when applied
+       to an element, are inherited by that element’s descendants, 
+       even if we don’t explicitly write a rule for those descendants. 
+       Typography-based properties (color, font-size, font-family, etc.) 
+       are usually inherited, while most other properties aren’t.
+       <br>
+       <br>
+
+    <b>*The exception to this is when directly targeting an element, 
+        as this always beats inheritance!!*</b></p>
+
+    <div id="parent">
+      <div class="child">Child</div>
+    </div>
+
+    <h2>Rule order</h2>
+    <p>The final factor, the end of the line, the tie-breaker of the tie-breakers. 
+        Let’s say that after every other factor has been taken into account, there 
+        are still multiple conflicting rules targeting an element. How does the cascade 
+        determine which rule to apply?</p>
+        <br>
+
+    <b>*Whichever rule was the last defined is the winner.!!*</b>
+  
+  
 </body>
 </html>
