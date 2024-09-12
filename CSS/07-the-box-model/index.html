@@ -16,5 +16,98 @@
     <a href="https://www.youtube.com/watch?v=rIO5326FgPE">Box-model explained here</a>
     <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/css-foundations/the-box-model/imgs/box-model.png" />
     <a href="https://www.youtube.com/watch?v=HdZHcFWcAd8">box-sizing: border-box vs content-box(default)</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">developer.mozzila.box-model</a>
+    <div>To use the alternative box model for all of your elements (which is a common choice among developers), set the box-sizing property on the html element and set all other elements to inherit that value:
+        <pre>html {
+        box-sizing: border-box;
+      }
+      
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+    </pre>
+      </div>
+      <h2>Margin</h2>
+      <p>he margin is an invisible space around your box. It pushes other elements away from the box. Margins can have positive
+    or negative values. Setting a negative margin on one side of your box can cause it to overlap other things on the page.
+    Whether you are using the standard or alternative box model, the margin is always added after the size of the visible
+    box has been calculated.
+    
+    We can control all margins of an element at once using the margin property, or each side individually using the
+    equivalent longhand properties:</p>
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+    <p>Depending on whether two elements whose margins touch have positive or negative margins, the results will be different:</p>
+    <ul>
+        <li>Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.</li>
+        <li>Two negative margins will collapse and the smallest (furthest from zero) value will be used.</li>
+        <li>If one margin is negative, its value will be subtracted from the total.</li>
+    </ul>
+    <h2>Border</h2>
+    <p>The border is drawn between the margin and the padding of a box. If you are using the standard box model, the size of the border is added to the width and height of the content box. If you are using the alternative box model, then the bigger the border is, the smaller the content box is, as the border takes up some of that available width and height of the element box.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">Border properties</a>
+    <ul>
+        <li>border-top</li>
+        <li>border-right</li>
+        <li>border-bottom</li>
+        <li>border-left</li>
+    </ul>
+    <p>To set the width, style, or color of all sides, use:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <p>o set the width, style, or color of a single side, use one of the more granular longhand properties:</p>
+    <ul>
+        <li>border-top-width</li>
+        <li>border-top-style</li>
+        <li>border-top-color</li>
+        <li>border-right-width</li>
+        <li>border-right-style</li>
+        <li>border-right-color</li>
+        <li>border-bottom-width</li>
+        <li>border-bottom-style</li>
+        <li>border-bottom-color</li>
+        <li>border-left-width</li>
+        <li>border-left-style</li>
+        <li>order-left-color</li>
+    </ul>
+    <h2>Padding</h2>
+    <p>The padding sits between the border and the content area and is used to push the content away from the border. Unlike margins, you cannot have a negative padding. Any background applied to your element will display behind the padding.
+       The padding property controls the padding on all sides of an element. To control each side individually, use these longhand properties:</p>
+    <ul>
+        <li>padding-top</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+    </ul>
+    <h2>The box model and inline boxes</h2>
+    <p>All of the above fully applies to block boxes. Some of the properties can apply to inline boxes too, such as those
+    created by a span element.
+    In the example below, we have a span inside a paragraph. We have applied a width, height, margin, border, and
+            padding to it. You can see that the width and height are ignored. The top and bottom margin, padding, and border
+            are respected but don't change the relationship of other content to our inline box. The padding and border
+            overlap other words in the paragraph. The left and right padding, margins, and borders move other content away
+            from the box.</p>
+    <p>span is an inline elemenet and acts like a element to block element, so
+        thats why height and width doesent apply to them. <b>Inline elements are contents
+            inside of block element</b>
+    </p>
+    <h1>Using display: inline-block;</h1>
+    <p><pre>display: inline-block is a special value of display, which provides a middle ground between inline and block. Use it if
+    you do not want an item to break onto a new line, but do want it to respect width and height and avoid the overlapping
+    seen above.
+    An element with display: inline-block does a subset of the block things we already know about:
+    The width and height properties are respected.
+    padding, margin, and border will cause other elements to be pushed away from the box.
+    It does not, however, break onto a new line, and will only become larger than its content if you explicitly add width
+    and height properties.</pre></p>
 </body>
 </html>

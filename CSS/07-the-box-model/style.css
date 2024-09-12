@@ -24,3 +24,15 @@
 .klasa2 {
     margin: 0px 0px 0px 40px;
 }
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  /* setting all web page elements to inherit box-sizing from html element */
+  
