@@ -1,13 +1,24 @@
 .klasa1 {
     margin: 0px 0px 0px 50px;
-    /* top,right, bottom, left, margina=od drugog elementa do trenutnog elementa */
+    /* top,right, bottom, left, margina=od drugog elementa do trenutnog elementa,
+    najbolje koristiti za pozicioniranje elemenata*/
     border: dashed red 5px;
     /* border mozemo samo jednu vrijednost i to je debljina, vrste:dash, dotted, double, solid */
     padding: 5px 2.5px 10px 7.5px;
     /* padding je razmak izmedu bordera i samog elementa */
-    height: auto;
-    width: auto;
+    height: 100;
+    width: 100;
     /* height i widht su dimenzije samog elementa */
+    box-sizing: border-box;
+    /* border-box oduzima velicinu bordera i paddinga + height,width , a bez njega se padding i border
+    dodaju ukupnoj velicini elementa + height, width..
+    border-box je ukupna velicina elementa (sa padding i border) da sve
+    zajedno pase width=100 i height=100 u ovom primjeru */
+    /* border-box najcesce dodajemo na univerzalni selektor u CSS-u,
+    npr. * {
+    border-box
+       }  tako da su nam elementi zajedno sad padding i border one velicine koju
+         specificiramo u width i height*/ 
 }
 
 .klasa2 {
