@@ -25,8 +25,8 @@ p {
 
 .flex-container {
   display: flex;
-  /* flex arranges data horizontally-->from left to right (rows) */
-  /* default (flexbox) arranges data vertically-->from top to botom (columns) */
+  /* flex or flex-direction: row; arranges data horizontally(on the main axis)-->from left to right (rows) */
+  /* flex-direction: column; arranges data vertically-->from top to botom (columns) */
 }
 
 /* this selector selects all divs inside of .flex-container --> descending combinator */
