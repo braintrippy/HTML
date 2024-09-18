@@ -91,6 +91,14 @@ p {
     flex-start (centered left), flex-end (centered right), center, stretch */
     /* align-items aligns items on the CROSS AXIS (vertically)
     flex-start (centered up), flex-end (centered down), center, stretch */
+    flex-wrap: wrap;
+    /* koristimo kad je vise itema nego stane u container
+    pa ih wrap prebaci u novi red */
+    align-content: center;
+    /* radi samo kod flex-wrap..poravnava wrapane iteme
+    po y osi */
+    gap: 1em;
+    /* razmak imedu wrapanih itema */
 }
 
 .flex-container1 .one11 {
@@ -98,18 +106,34 @@ p {
     border: 3px salmon solid;
     width: 50px;
     height: 50px;
+    flex-grow: 1;
+    /* flex-grow rarstegne ovaj item da popuni cijeli kontejner */
+    flex-shrink: 0;
+    /* kad smanjimo velicinu prozora ovaj item se ne smanjuje */
+    /* flex-shrink: 5; smanjuje se 5x brze od ostalih*/
+    flex-basis: 200px;
+    /* overrrida width ako je postavljeni prije */
+    flex: 1 0 200px;
+    /* kombinira flex-grow, flex-shrink, flex-basis */
 }
 .flex-container1 .two22 {
     background-color: peachpuff;
     border: 3px salmon solid;
     width: 50px;
     height: 50px;
+    align-self: center;
+    /* targetamo direktno item 2 da overrrida align-item 
+    u .container */
 }
 .flex-container1 .three33 {
     background-color: peachpuff;
     border: 3px salmon solid;
     width: 50px;
     height: 50px;
+    order: -1;
+    /* mijenja order npr. treceg itema na prvo mjesto
+    jer po defaultu svi imaju 0 vrijednost,
+    ALI GA NE KORISTIMO JER MIJENJA SEMANTIKU */
 }
 .flex-container1 .four44 {
     background-color: peachpuff;
