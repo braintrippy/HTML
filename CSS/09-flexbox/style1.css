@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 5px 5px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px 4px;
+  }
+
+  .date { 
+    margin: 4px 4px;
+  }
+
+  .login {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    display: flex;
+    color: #5995DA;
+    background-color: #d6e9fe;
+    justify-content: center;
+  }
+
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+    border: solid rebeccapurple 10px;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    border: solid yellow 10px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    border: solid peachpuff 10px;
+  }
+
+  .social,
+  .subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D6E9FE;
+    border: 5px solid green;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+    background-color: #5995DA;
+  }
+
+  .footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex:initial;
+  width: 200px;
+  /*  flex initial specificira width tako da npr. box 1
+  i box 3 imaju odredeni width dok box 2 nema  */
+}
+
