@@ -38,6 +38,39 @@
             It is possible to get fancy, and set up layouts where some columns relate to each other in a specific ratio, so it’s
             useful to know that you can use other values, but those are relatively rare.
          </pre></b></p>
+         <p><b><pre>7.1.1. Basic Values of flex
+        This section is informative.
+        
+        The list below summarizes the effects of the four flex values that represent most commonly-desired effects:
+        
+        flex: initial
+        Equivalent to flex: 0 1 auto. (This is the initial value.) Sizes the item based on the width/height properties. (If the
+        item’s main size property computes to auto, this will size the flex item based on its contents.) Makes the flex item
+        inflexible when there is positive free space, but allows it to shrink to its minimum size when there is insufficient
+        space. The alignment abilities or auto margins can be used to align flex items along the main axis.
+        
+        flex: auto
+        Equivalent to flex: 1 1 auto. Sizes the item based on the width/height properties, but makes them fully flexible, so
+        that they absorb any free space along the main axis. If all items are either flex: auto, flex: initial, or flex: none,
+        any positive free space after the items have been sized will be distributed evenly to the items with flex: auto.
+        
+        flex: none
+        Equivalent to flex: 0 0 auto. This value sizes the item according to the width/height properties, but makes the flex
+        item fully inflexible. This is similar to initial, except that flex items are not allowed to shrink, even in overflow
+        situations.
+        
+        flex: positive-number
+        Equivalent to flex: positive-number> 1 0. Makes the flex item flexible and sets the flex basis to zero, resulting
+        in an item that receives the specified proportion of the free space in the flex container. If all items in the
+        flex container use this pattern, their sizes will be proportional to the specified flex factor.
+        By default, flex items won’t shrink below their minimum content size (the length of the longest word or
+        fixed-size element). To change this, set the min-width or min-height property. (See §4.5 Automatic Minimum Size
+        of Flex Items.)</pre></b></p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">Flex explained</a>
+        <a href="https://www.w3.org/TR/css-flexbox-1/#flex-common">Flex explained</a>
+        <br>
+        <br>
+        <a href="https://www.youtube.com/watch?v=u044iM9xsWU&t=1s">Youtube explanation</a>
 
 </body>
 </html>

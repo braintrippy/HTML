@@ -39,3 +39,10 @@ flex-basis: 0 */
     flex-shrink: 0;
   }
   /* this overriddes flex: 1 1 auto */
+  /* flex basis: auto..da provjeri width deklarraciju
+  250px */
+
+  a {
+    border: solid 3px peachpuff;
+    background-color: rgb(209, 233, 245);
+  }
