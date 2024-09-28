@@ -20,6 +20,9 @@ flex-basis: 0 */
   /* only div.two is selected here */
   .flex-container .two {
     flex: 2 1 0%;
+    /* 2 is making item smaller and not bigger
+    by default because .flex-containter div 
+    flex: 1 1 0% is overriding item 1 and 3 */
   }
    /*  Flex shrink */
   .flex-container {
@@ -39,7 +42,7 @@ flex-basis: 0 */
     flex-shrink: 0;
   }
   /* this overriddes flex: 1 1 auto */
-  /* flex basis: auto..da provjeri width deklarraciju
+  /* flex basis: auto..da provjeri width deklaraciju
   250px */
 
   a {
