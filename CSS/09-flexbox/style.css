@@ -114,6 +114,7 @@ p {
     flex-basis: 200px;
     /* overrrida width ako je postavljeni prije */
     flex: 1 0 200px;
+    /* ovaj flex overrida flex-grow: 1; gore */
     /* kombinira flex-grow, flex-shrink, flex-basis */
 }
 .flex-container1 .two22 {
